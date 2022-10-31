@@ -1,0 +1,73 @@
+{
+  "environment" : [ {
+    "name" : "microfocus",
+    "description" : "microfocus pdt",
+    "noofstages" : 3,
+    "identityHost" : "localhost",
+    "stages" : [ {
+      "stageName" : "Dev",
+      "description" : "Development env",
+      "idvaults" : [ {
+        "identityVaultId" : "Dev01",
+        "identityVaultHost" : "10.71.142.211",
+        "identityVaultPort" : "636",
+        "isSecured" : "yes",
+        "identityVaultUserId" : "cn=admin,ou=sa,o=system",
+        "identityVaultPassword" : "novell",
+        "driverSets" : [ {
+          "driverSetId" : "cn=driverset1,o=system",
+          "driverSetName" : "driverset1",
+          "drivers" : [ {
+            "driverId" : "cn=driver1,cn=driverset1,o=system",
+            "driverName" : "driver1"
+          } ]
+        } ]
+      } ]
+    }, {
+      "stageName" : "IT",
+      "description" : "IT env",
+      "idvaults" : [ {
+        "identityVaultId" : "IT01",
+        "identityVaultHost" : "10.71.142.211",
+        "identityVaultPort" : "636",
+        "isSecured" : "yes",
+        "identityVaultUserId" : "cn=admin,ou=sa,o=system",
+        "identityVaultPassword" : "novell",
+        "driverSets" : [ {
+          "driverSetId" : "cn=driverset1,o=system",
+          "driverSetName" : "driverset2",
+          "drivers" : [ {
+            "driverId" : "cn=driver1,cn=driverset1,o=system",
+            "driverName" : "driver334"
+          } ]
+        } ]
+      } ]
+    }, {
+      "stageName" : "UAT",
+      "description" : "UAT env",
+      "idvaults" : [ {
+        "identityVaultId" : "UAT01",
+        "identityVaultHost" : "10.71.142.211",
+        "identityVaultPort" : "636",
+        "isSecured" : "yes",
+        "identityVaultUserId" : "cn=admin,ou=sa,o=system",
+        "identityVaultPassword" : "novell",
+        "driverSets" : [ {
+          "driverSetId" : "cn=driverset1,o=system",
+          "driverSetName" : "driverset3",
+          "drivers" : [ {
+            "driverId" : "cn=driver1,cn=driverset1,o=system",
+            "driverName" : "driver3"
+          } ]
+        }, {
+          "driverSetId" : "cn=driverset1,o=system",
+          "driverSetName" : "driverset33",
+          "drivers" : [ {
+            "driverId" : "cn=driver1,cn=driverset1,o=system",
+            "driverName" : "driver33"
+          } ]
+        } ]
+      } ]
+    } ]
+  } ]
+}
