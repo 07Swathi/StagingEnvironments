@@ -1,0 +1,26 @@
+{
+  "driverRecipeId" : "ADR",
+  "driverRecipeName" : "ADDriver",
+  "driverBasePackage" : {
+    "packageId" : "AD1",
+    "packageName" : "AD",
+    "packageVersion" : "1.0"
+  },
+  "driverFeaturedPackage" : [ {
+    "packageId" : "hello",
+    "packageName" : "string",
+    "packageVersion" : "string"
+  } ],
+  "driverMandatoryPackage" : [ {
+    "packageId" : "string",
+    "packageName" : "string",
+    "packageVersion" : "string"
+  } ],
+  "driverInputPrompts" : [ {
+    "key" : "string",
+    "name" : "string",
+    "value" : "string"
+  } ],
+  "IdentityVaultId" : "string",
+  "bindingInfos" : null
+}
